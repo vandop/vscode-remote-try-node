@@ -13,7 +13,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 # user UID/GID to avoid permission issues with bind mounts. Update USER_UID / USER_GID 
 # if yours is not 1000. See https://aka.ms/vscode-remote/containers/non-root-user.
 ARG USER_UID=1000
-ARG USER_GID=$USER_UID
+ARG USER_GID=$UID
 
 # Configure apt and install packages
 RUN apt-get update \
